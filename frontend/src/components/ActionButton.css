@@ -1,0 +1,19 @@
+.ctabutton {
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    background: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 10%;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.ctabutton:hover{
+    border-color: #802090;
+    background-color: #802090;
+    width: 20%;
+    transition: 0.7s;
+}

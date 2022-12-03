@@ -1,0 +1,61 @@
+.inputcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.loginrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginlogo {
+    width: 20%;
+}
+
+.logintitle {
+    margin-top: 20%;
+    font-size: 24px;
+    color: #802090;
+}
+
+.sendbtn {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    border-color: #802090;
+    border-style: solid;
+    border-radius: 5px;
+    background: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #802090;
+}
+
+.sendbtn:hover{
+    color:white;
+    border-color: #802090;
+    background-color: #802090;
+    transition: 0.7s;
+}
+
+.seslink{
+    text-decoration: none;
+    color: #802090;
+    font-size: 12px;
+}
+
+.sestxt {
+    color: black;
+    font-size: 12px;
+}
+
+.sesionlinks{
+    margin-bottom: 20%;
+}

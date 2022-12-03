@@ -1,0 +1,15 @@
+.navlink {
+    font-weight: 600;
+    color: #802090;
+    text-decoration: none;
+    font-size: 17px;
+    padding-right: 15px;
+}
+
+.navlink:hover {
+    color:#802090
+}
+
+.linkul {
+    margin-right: 5%;
+}

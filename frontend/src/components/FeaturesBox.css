@@ -1,0 +1,44 @@
+.iconcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #802090;
+    border-radius: 90px;
+    width: 70%;
+    height: 120px;
+    margin-top: -4%;
+}
+
+.icondiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    padding: 50px;
+}
+
+.pcicon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:white;
+}
+
+.iconh6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.h6div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 200px;
+}

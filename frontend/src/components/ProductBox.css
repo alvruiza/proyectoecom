@@ -1,0 +1,16 @@
+.cartdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: red;
+    margin: 7%;
+}
+
+.title{
+    color: blueviolet;
+}
+
+.price{
+    font-size: 20px;
+}

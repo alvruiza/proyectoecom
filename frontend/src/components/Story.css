@@ -1,0 +1,23 @@
+.storycontainer {
+    margin-top:3% ;
+}
+
+.storyh4 {
+    color:rgb(128, 32, 144);
+    font-weight: 700;
+    margin-top: 30%;
+    font-size:50px ;
+}
+
+.storyp{
+    color:rgb(128, 32, 144);
+    font-weight: 5400;
+    margin-bottom:30%;
+}
+
+.storyrow {
+    background-image: url(https://i.postimg.cc/52cRk9Mf/Dise-o-sin-t-tulo-2022-11-13-T183334-756.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 80%;
+}
