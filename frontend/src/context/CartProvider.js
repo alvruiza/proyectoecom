@@ -23,6 +23,8 @@ const recoverFromLS = () => {
     dispatch({type: 'RECOVER'})
 }
 
+
+
 return <CartContext.Provider value={{ cartState, addToCart, deleteFromCart, cleanCart, recoverFromLS}}>{children}</CartContext.Provider>
     
 }

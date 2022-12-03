@@ -17,7 +17,6 @@ const Cart = () => {
     const {qty, cart} = context.cartState
     const navigate = useNavigate()
 
- 
 
     const reducirtStock = async () => {
         try{
@@ -27,11 +26,20 @@ const Cart = () => {
         }
     }
 
+    const total = 
+        cart.reduce((arr, product)=>{
+        
+        return(product.price + arr)
+       }, 0)
+    
+        
+
+
     return(
         <Fragment>
             <Topline/>
             <Navbar/>
-                <div>
+                <div className="cartboxes mx-auto">
                     <h1>Productos en el carro</h1>
                     {cart.map((el) => (
                         <Fragment>
@@ -40,14 +48,14 @@ const Cart = () => {
                     ))}
                     {cart.length ? (
                     <div className="paydiv">
-                        <PayPalButtons
+                        <PayPalButtons className="paybtn"
                     createOrder={(data, actions) => {
                         return actions.order.create({
                             purchase_units: [
                                 {
                                     amount: {
-                                        value: "1.99",
-                                        currency_code:'CLP'
+                                        value: total,
+                                        currency_code:'USD'
                                     },
                                 },
                             ],

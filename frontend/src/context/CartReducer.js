@@ -12,7 +12,7 @@ const cartReducers = (state, action) => {
     switch (type) {
         case 'ADD' :
             console.log(payload)
-            if(state.cart.some((el) => el._id === payload.item._id)){
+            if(state.cart && state.cart.some((el) => el._id === payload.item._id)){
                 state.cart.forEach((el) => {
                     if(el._id === payload.item._id) {
                         el.qty = payload.qty
@@ -26,6 +26,7 @@ const cartReducers = (state, action) => {
 
             case 'DELETE':
                 const resultado = state.cart.filter((el) => el._id !== payload)
+                localStorage.setItem('cart', JSON.stringify(resultado))
                 return({
                     cart: resultado, 
                     qty: getQty(resultado)
@@ -33,10 +34,11 @@ const cartReducers = (state, action) => {
             case 'CLEAN':
                 return {cart: [], qty: 0}    
             case 'RECOVER':
-               const carro = localStorage.getItem('cart')
+               const carro = localStorage.getItem('cart') 
                return{
-                cart: JSON.parse(carro)
+                cart: JSON.parse(carro) || []
                }
+               
         default:
             return state
     }
